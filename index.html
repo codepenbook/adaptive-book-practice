@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Адаптив простыми словами - практика</title>
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="menu__body">
+            <ul class="menu__list header__menu">
+                <li class="menu__item">
+                    <a href="#preparation" class="menu__link">Подготовка</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#header" class="menu__link">Добавляем адаптив для "Header"</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#hero" class="menu__link">Добавляем адаптив для "Hero"</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#easy-useful" class="menu__link">Добавляем адаптив для "Easy Useful"</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#count" class="menu__link">Добавляем адаптив для "Count"</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#services" class="menu__link">Добавляем адаптив для "Services"</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#testimonials" class="menu__link">Добавляем адаптив для "Testimonials"</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#section-footer" class="menu__link">Добавляем адаптив для "Footer"</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#conclusion" class="menu__link">Итоги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#independent" class="menu__link">Самостоятельная работа</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__burger">
+            <span></span>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner__container">
+            <div class="banner__body">
+                <div class="banner__preview preview-banner">
+                    <h1 class="preview-banner__title">Учебник по адаптивной верстке - практика</h1>
+                </div>
+                <div class="banner__links links-banner">
+                    <h2 class="title">Основные источники</h2>
+                    <ol class="links-banner__list">
+                        <li class="links-banner__item">
+                            <a target="_blank" href="https://html5book.ru/category/vyorstka/" class="links-banner__link">Учебник по верстке</a>
+                        </li>
+                        <li class="links-banner__item">
+                            <a target="_blank" href="https://youtube.com/playlist?list=PLM6XATa8CAG4uCli-pMvuvwj46UaQoqIc" class="links-banner__link">Бесплатный курс на YouTube от “Фрилансер по жизни”</a>
+                        </li>
+                        <li class="links-banner__item">
+                            <a target="_blank" href="https://skillbox.ru/course/frontend-pro-expert/" class="links-banner__link">Курс SkillBox “Front-end разработчик” </a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="banner__advice advice-banner">
+                    <h2 class="title">Описание</h2>
+                    <p>Вот вы и прошли теорию по адаптивной верстке, теперь нам предстоит сверстать адаптивный сайт, где будет разобрана каждая секция.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <section id="preparation">
+        <div class="_container">
+            <div class="preparation__body">
+                <h2 class="title">Подготовка</h2>
+                <p>И так начнем.</p>
+                <p>Для практики был подготовлен уже сверстанный сайт, однако он не адаптивный.</p>
+                <p>По ходу практики мы будем шаг за шаг адаптировать наш сайт под: старые мониторы, планшеты и телефоны.</p>
+                <br>
+                <p>Для начала скачайте файл с сайтом.</p>
+                <a href="https://github.com/codepenbook/no-adptive-site" target="_blank" title="Увеличить фото">Ссылка на файл с сайтом</a>
+                <br>
+                <br>
+                <div class="fixed__img">
+                    <a href="assets/img/download-site.jpg" target="_blank"><img class="fixed-one" src="assets/img/download-site.jpg" alt="download-site"></a>
+                </div>
+                <p>Нажмите на кнопу <strong>Code</strong>, после выберите <strong>Download ZIP</strong> и распакуйте содержимое.</p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="header">
+        <div class="_container">
+            <div class="header__body">
+                <h2 class="title">Добавляем адаптив для "Header"</h2>
+                <p style="color: red;"><strong>Важное замечание!</strong></p>
+                <p>Обратите внимание на структуру вложенности элементов блоков. Их правильное построение играет важную роль в адаптивной верстке сайта.</p>
+                <br>
+                <div class="fixed__img">
+                    <a href="assets/img/header-desc.jpg" target="_blank" title="Увеличить фото"><img class="fixed-one" src="assets/img/header-desc.jpg" alt="header-desc"></a>
+                </div>
+                <br>
+                <p>Или вот, один из сложных примеров, он содержит в себе много вложенности.</p>
+                <br>
+                <div class="fixed__img">
+                    <a href="assets/img/testimonials-desc.jpg" target="_blank" title="Увеличить фото"><img class="fixed-one" src="assets/img/testimonials-desc.jpg" alt="testimonials-desc"></a>
+                </div>
+                <br>
+                <p>Конечно вы можете делать это по-другому, однако есть определенные правила, которых стоит придерживаться. Такой подход делает вашу верству удобной и профессиональной!</p>
+                <br>
+                <p>Более подробно с этим можете ознакомиться по ссылке:</p>
+                <a href="https://ru.bem.info/methodology/quick-start/" target="_blank">Методология БЭМ - Быстрый старт</a>
+                <br>
+                <br>
+                <p>Теперь перейдем непосредственно к добавлению адаптивности в <strong>header</strong>.</p>
+                <br>
+                <p>Для удобства закомментируйте всё, кроме <strong>header</strong> и секции <strong>hero</strong>.</p>
+                <div class="fixed__img">
+                    <a href="assets/img/com-other-files.jpg" target="_blank" title="Увеличить фото"><img class="fixed-one" src="assets/img/com-other-files.jpg" alt="com-other-files"></a>
+                </div>
+                <br>
+                <p>Попробуйте уменьшить разрешение экрана и станет видно, что ниже <strong>800px, header</strong> выходит за контейнер.</p>
+                <br>
+                <div class="fixed__img">
+                    <a href="assets/img/header_638.jpg" target="_blank" title="Увеличить фото"><img class="fixed-one" src="assets/img/header_638.jpg" alt=""></a>
+                </div>
+                <br>
+                <p>Исправим это следующим образом:</p>
+                <br>
+                <p><strong>@media (max-width: 820px) {</strong></p>
+                /*На ширине экрана 820px, уменьшим правые отступы для всех menu__item, кроме последнего. */
+                <p class="padding"><strong>.menu__list>*:not(:last-child) {</strong></p>
+                <p class="padding"><strong>margin: 0px 20px 0px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <div class="fixed__img">
+                    <a href="assets/img/header_768.jpg" target="_blank" title="Увеличить фото"><img class="fixed-one" src="assets/img/header_768.jpg" alt=""></a>
+                </div>
+                <br>
+                <p>Теперь <strong>header</strong> отображается адекватно и на ширине <strong>768px</strong>, можно навигацию закинуть в меню бургер, однако у нас учебник по адаптивной верстки и пока на этом разрешении, для <strong>header__menu</strong> установим
+                    <strong>display: none</strong>.</p>
+                <a href="https://youtu.be/chJQofBSx94">Правильное адаптивное меню бургер на HTML CSS и jQuery.</a>
+                <p>На этом с <strong>header</strong> закончим, т.к. до <strong>320px</strong>, всё отлично смотриться.</p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="hero">
+        <div class="_container">
+            <div class="hero__body">
+                <h2 class="title">Добавляем адаптив для "Hero"</h2>
+                <p>При уменьшении экрана на <strong>768px</strong>, отступы сверху и снизу у <strong>hero__body</strong>, слишком большие, поэтому уменьшим их.</p>
+                <br>
+                <p><strong>@media (max-width: 768px) {</strong></p>
+                <p class="padding"><strong>.hero__body {</strong></p>
+                <p class="padding"><strong>padding: 150px 0px 90px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <div class="fixed__img">
+                    <a href="assets/img/hero-padding.jpg" target="_blank" title="Увеличить фото"><img class="fixed-one" src="assets/img/hero-padding.jpg" alt=""></a>
+                </div>
+                <br>
+                <p>Далее для ширины в <strong>500px</strong> произведем следующие действия (изменения увидите сами):</p>
+                <br>
+                <p><strong>@media (max-width: 500px) {</strong></p>
+                <p class="padding"><strong>.hero__body {</strong></p>
+                <p class="padding"><strong>padding: 110px 0px 40px 0px;</strong></p>
+                /* Блок, который содержит в себе заголовок, текст и кнопки, будет занимать теперь 100% ширины */
+                <p class="padding"><strong>width: 100%;</strong></p>
+                /* Весь текст в нем будет по центру */
+                <p class="padding"><strong>text-align: center;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.hero__title {</strong></p>
+                <p class="padding"><strong>font-size: 36px;</strong></p>
+                <p class="padding"><strong>line-height: 40px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.hero__desc {</strong></p>
+                <p class="padding"><strong>margin: 0px 0px 20px 0px;</strong></p>
+                <p class="padding"><strong>font-size: 16px;</strong></p>
+                <p class="padding"><strong>line-height: 25px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.hero__buttons {</strong></p>
+                /* Кнопки теперь не вряд, а в колонку */
+                <p class="padding"><strong>flex-direction: column;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.hero__buttons>*:not(:last-child) {</strong></p>
+                <p class="padding"><strong>margin: 0px 0px 10px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <p>С секцией hero на этом тоже можно закончить.</p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="easy-useful">
+        <div class="_container">
+            <div class="easy-useful__body">
+                <h2 class="title">Добавляем адаптив для "Easy Useful"</h2>
+                <p>Для этой секции, вы не поверите, достаточно всего три строчки кода:</p>
+                <br>
+                <p><strong>@media (max-width: 768px) {</strong></p>
+                /* header-block это БЭМ блок, он используется в этой секции и секции services, поэтому нам достаточно один раз уменьшить отступ сверху и снизу. */
+                <p class="padding"><strong>.header-block {</strong></p>
+                <p class="padding"><strong>padding: 50px 0px 50px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.easy-useful__row {</strong></p>
+                /* Теперь скажем так, наши карточки не ряд, а в колонку */
+                <p class="padding"><strong>flex-direction: column;</strong></p>
+                /* Уменьшим отступ снизу до кнопки */
+                <p class="padding"><strong>margin: 0px 0 40px 0;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <p>На этом с этой секцией всё!</p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="count">
+        <div class="_container">
+            <div class="count__body">
+                <h2 class="title">Добавляем адаптив для "Count"</h2>
+                <p>И здесь аналогично всего три строчки кода:</p>
+                <br>
+                <p><strong>@media (max-width: 820px) {</strong></p>
+                /* Дадим этим блокам возможность переноситься ниже */
+                <p class="padding"><strong>.count__row {</strong></p>
+                <p class="padding"><strong>flex-wrap: wrap;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.count__column {</strong></p>
+                /* Укажем, что на этой ширине экрана, блоки будут не в ряд по 4, а по 2 */
+                <p class="padding"><strong>flex: 0 1 50%;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <p><strong>@media (max-width: 500px) {</strong></p>
+                <p class="padding"><strong>.count__column {</strong></p>
+                /* Укажем, что на этой ширине экрана, блоки будут не в ряд по 2, а по 1 */
+                <p class="padding"><strong>flex: 0 1 100%;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <p>Вот и всё, круто, правда? Во всём помогает правильная структура блоков по методологии <strong>БЭМ</strong>!</p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="services">
+        <div class="_container">
+            <div class="services__body">
+                <h2 class="title">Добавляем адаптив для "Services"</h2>
+                <p>Всего две строчки...</p>
+                <br>
+                <p><strong>@media (max-width: 860px) {</strong></p>
+                <p class="padding"><strong>.services {</strong></p>
+                /* Уменьшим отступ снизу для секции services */
+                <p class="padding"><strong>padding: 0px 0px 50px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.services__column {</strong></p>
+                /* Эти блоки с услугами, теперь занимают всю ширину */
+                <p class="padding"><strong>width: 100%;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="testimonials">
+        <div class="_container">
+            <div class="testimonials__body">
+                <h2 class="title">Добавляем адаптив для "Testimonials"</h2>
+                <p>Как говорилось ранее, это сложная секция, но даже она при правильной структуре блоков, оказывается не трудной.</p>
+                <br>
+                <p><strong>@media (max-width: 860px) {</strong></p>
+                <p class="padding"><strong>.testimonials__body {</strong></p>
+                /* Уменьшим отступ сверху и снизу */
+                <p class="padding"><strong>padding: 40px 0;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.testimonials__row {</strong></p>
+                /* Для двух больших блоков: с заголовоком, с текстом, кнопкой и комментарием пользователей укажем, чтобы они былы в колонку */
+                <p class="padding"><strong>flex-direction: column;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <p class="padding"><strong>.testimonials__row>*:not(:last-child) {</strong></p>
+                /* Уменьшим между ними отступ */
+                <p class="padding"><strong>margin: 0px 0px 40px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <br>
+                <div class="fixed__img">
+                    <a href="assets/img/testimonials_860.jpg" target="_blank" title="Увеличить фото"><img class="fixed-one" src="assets/img/testimonials_860.jpg" alt=""></a>
+                </div>
+                <br>
+                <p><strong>@media (max-width: 500px) {</strong></p>
+                <p class="padding"><strong>.testimonials__column {</strong></p>
+                /* Теперь эти два больших блока, занимают всю ширину */
+                <p class="padding"><strong>width: 100%;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                /* Для элементов внутри этих двух блоков укажем, чтобы они были в колонку, по середине и текст тоже был по середине */
+                <p class="padding"><strong>.testimonials__item {</strong></p>
+                <p class="padding"><strong>display: flex;</strong></p>
+                <p class="padding"><strong>flex-direction: column;</strong></p>
+                <p class="padding"><strong>align-items: center;</strong></p>
+                <p class="padding"><strong>text-align: center;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                /* В первом блоке для заголовка уменьшим размер шрифта и междустрочный отступ*/
+                <p class="padding"><strong>.item-testimonials__title {</strong></p>
+                <p class="padding"><strong>font-size: 36px;</strong></p>
+                <p class="padding"><strong>line-height: 40px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.item-testimonials__text {</strong></p>
+                /* В первом блоке для текста уменьшим отступ до кнопки */
+                <p class="padding"><strong>margin: 0px 0px 20px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.item-testimonials__row>*:not(:last-child) {</strong></p>
+                /* Уменьшим отступ между этими двумя блоками */
+                <p class="padding"><strong>margin: 0px 0px 40px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.comment__item {</strong></p>
+                /* Для элементов комментария укажем, чтобы они были в колонку */
+                <p class="padding"><strong>flex-direction: column;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.comment__item>*:not(:last-child) {</strong></p>
+                /* И уберем отступы */
+                <p class="padding"><strong>margin: 0;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <div class="fixed__img">
+                    <a href="assets/img/testimonials_500.jpg" target="_blank" title="Увеличить фото"><img class="fixed-one" src="assets/img/testimonials_500.jpg" alt=""></a>
+                </div>
+                <br>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="section-footer">
+        <div class="_container">
+            <div class="section-footer__body">
+                <h2 class="title">Добавляем адаптив для "Footer"</h2>
+                <p>С <strong>footer</strong> тоже все просто:</p>
+                <br>
+                <p><strong>@media (max-width: 768px) {</strong></p>
+                /*Уменьшим отступ снизу и сверху, для двух блоков footer укажем, чтобы они были в колонку и по середине. */
+                <p class="padding"><strong>.footer__body {</strong></p>
+                <p class="padding"><strong>padding: 40px 0;</strong></p>
+                <p class="padding"><strong>display: flex;</strong></p>
+                <p class="padding"><strong>flex-direction: column;</strong></p>
+                <p class="padding"><strong>align-items: center;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.footer__up,</strong></p>
+                <p class="padding"><strong>.footer__bottom {</strong></p>
+                /* Укажем, чтобы элементы внутри footer__up и footer__bottom были в колонку. */
+                <p class="padding"><strong>flex-direction: column;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.footer__up>*:not(:last-child),</strong></p>
+                <p class="padding"><strong>.footer__bottom>*:not(:last-child) {</strong></p>
+                /* Укажем, чтобы элементы внутри footer__up и footer__bottom имели нижний отступ, кроме последнего элемента */
+                <p class="padding"><strong>margin: 0px 0px 40px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.footer__menu .menu__list {</strong></p>
+                /* Немного приукрасим навигацию в footer, чтобы она была в колонку */
+                <p class="padding"><strong>flex-direction: column;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.footer__menu .menu__list>*:not(:last-child) {</strong></p>
+                /* И уберем отступы у элементов навигации footer */
+                <p class="padding"><strong>margin: 0;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <div class="fixed__img">
+                    <a href="assets/img/footer_768.jpg" target="_blank" title="Увеличить фото"><img class="fixed-one" src="assets/img/footer_768.jpg" alt=""></a>
+                </div>
+                <br>
+                <p>Больше изменять ничего не нужно, на ширине <strong>320px, footer</strong> выглядит хорошо.</p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="conclusion">
+        <div class="_container">
+            <div class="conclusion__body">
+                <h2 class="title">Подведем итоги</h2>
+                <p>Не нужно придумывать что-то своё, для такой верстки есть свои правила.</p>
+                <p>И в данной практике мы в этом убедились.</p>
+                <p>Далее вас ждет самостоятельная работа, где вы сами сверстаете сайт и сделаете его адаптивным.</p>
+                <p><strong>Успехов!</strong></p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="independent">
+        <div class="_container">
+            <div class="independent__body">
+                <h2 class="title">Самостоятельная работа</h2>
+                <p>Не забывайте о правильной структуре блоков, это намного облегчит вам жизнь.</p>
+                <br>
+                <a href="https://codepenbook.github.io/adaptive-book-independent/" class="independent" target="_blank">Перейти к самостоятельной →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="banner__container">
+            <hr>
+            <div class="footer__body">
+                <div class="footer__copy">УАвиаК-МЦК © 2022</div>
+                <div class="footer__socials">
+                    <ul class="socials__list">
+                        <li class="social__item">
+                            <a href="https://uaviak.ru/" class="social__link">
+                                <img src="assets/img/uaviak.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://codepen.io/codepen-book" class="social__link">
+                                <img src="assets/img/codepen.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://github.com/codepenbook" class="social__link">
+                                <img src="assets/img/github.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>
